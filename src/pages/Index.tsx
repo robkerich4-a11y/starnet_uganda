@@ -11,12 +11,13 @@ const Index = () => {
     price: string;
   } | null>(null);
 
+  // 🇺🇬 Updated Uganda Packages
   const packages = [
-    { duration: "1 Day", data: "7GB", price: "79" },
-    { duration: "7 Days", data: "12GB", price: "99" },
-    { duration: "15 Days", data: "25GB", price: "150" },
-    { duration: "21 Days", data: "45GB", price: "225" },
-    { duration: "30 Days", data: "Unlimited", price: "299", featured: true },
+    { duration: "1 Day", data: "7GB", price: "3,000" },
+    { duration: "7 Days", data: "12GB", price: "7,000" },
+    { duration: "15 Days", data: "10GB", price: "12,000" },
+    { duration: "21 Days", data: "45GB", price: "18,000" },
+    { duration: "30 Days", data: "Unlimited", price: "30,000", featured: true },
   ];
 
   const features = [
@@ -61,7 +62,7 @@ const Index = () => {
             <h1 className="mb-3 text-4xl font-bold tracking-tight text-foreground md:text-5xl">
               Starnet{" "}
               <span className="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-                Kenya
+                Uganda
               </span>
             </h1>
             <p className="mx-auto mb-5 max-w-xl text-lg text-muted-foreground md:text-xl">
@@ -133,7 +134,7 @@ const Index = () => {
                     <span className="text-2xl font-extrabold text-primary">
                       {pkg.price}
                     </span>
-                    <span className="text-xs text-muted-foreground">Ksh</span>
+                    <span className="text-xs text-muted-foreground">Ugx</span>
                   </div>
                   <div className="mt-1 inline-block rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 px-3 py-0.5">
                     <span className="text-sm font-semibold text-foreground">
@@ -170,10 +171,10 @@ const Index = () => {
       <footer className="border-t border-border bg-card/50 py-5">
         <div className="container mx-auto px-4 text-center space-y-2">
           <p className="text-xs text-muted-foreground">
-            © 2025 Starnet Kenya. All rights reserved.
+            © 2025 Starnet Uganda. All rights reserved.
           </p>
           <a
-            href="mailto:starnethelp01@gmail.com?subject=Internet%20Package%20Inquiry&body=Hi%20Starnet%20Kenya%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20packages."
+            href="mailto:starnetuganda@gmail.com?subject=Internet%20Package%20Inquiry&body=Hi%20Starnet%20Uganda%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20packages."
             className="inline-block bg-primary text-primary-foreground px-4 py-2 rounded-md shadow hover:bg-primary/90 transition text-xs"
           >
             Contact Us
