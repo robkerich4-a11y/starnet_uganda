@@ -16,10 +16,10 @@ interface PaymentModalProps {
 
 export const PaymentModal = ({ package: pkg, onClose }: PaymentModalProps) => {
   const [copied, setCopied] = useState(false);
-  const tillNumber = "+256772676652";
+  const agentNumber = "+256772676652";
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(tillNumber);
+    navigator.clipboard.writeText(agentNumber);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -30,9 +30,11 @@ export const PaymentModal = ({ package: pkg, onClose }: PaymentModalProps) => {
     <Dialog open={!!pkg} onOpenChange={onClose}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold text-center">M-Pesa Payment Instructions</DialogTitle>
+          <DialogTitle className="text-2xl font-bold text-center">
+            Starlink Payment Instruction
+          </DialogTitle>
         </DialogHeader>
-        
+
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
@@ -45,36 +47,32 @@ export const PaymentModal = ({ package: pkg, onClose }: PaymentModalProps) => {
               {pkg.duration} – {pkg.data}
             </p>
             <p className="text-2xl font-extrabold text-primary mt-2">
-              Ksh {pkg.price}
+              Ugx {pkg.price}
             </p>
           </div>
 
           {/* Payment Steps */}
           <div className="space-y-3">
-            <p className="font-semibold text-foreground mb-3">Please follow these steps:</p>
+            <p className="font-semibold text-foreground mb-3">Payment Steps:</p>
             <ol className="space-y-2 text-sm text-muted-foreground">
               <li className="flex gap-2">
                 <span className="font-bold text-primary">1.</span>
-                <span>Go to M-Pesa on your phone</span>
+                <span>Dial *165#</span>
               </li>
               <li className="flex gap-2">
                 <span className="font-bold text-primary">2.</span>
-                <span>Select Lipa na M-Pesa</span>
+                <span>Select Send Money</span>
               </li>
               <li className="flex gap-2">
                 <span className="font-bold text-primary">3.</span>
-                <span>Select Buy Goods and Services</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="font-bold text-primary">4.</span>
-                <div className="flex-1">
-                  <span>Enter Till Number: </span>
+                <span>
+                  Enter Agent’s Number:
                   <div className="flex items-center gap-2 mt-1">
-                    <span className="font-bold text-foreground text-lg">{tillNumber}</span>
+                    <span className="font-bold text-foreground text-lg">{agentNumber}</span>
                     <button
                       onClick={copyToClipboard}
                       className="p-1 hover:bg-accent rounded transition-colors"
-                      title="Copy till number"
+                      title="Copy Agent’s Number"
                     >
                       {copied ? (
                         <CheckCircle2 className="h-4 w-4 text-primary" />
@@ -83,19 +81,24 @@ export const PaymentModal = ({ package: pkg, onClose }: PaymentModalProps) => {
                       )}
                     </button>
                   </div>
-                </div>
+                </span>
+              </li>
+              <li className="flex gap-2">
+                <span className="font-bold text-primary">4.</span>
+                <span>
+                  Enter Amount:{" "}
+                  <span className="font-semibold text-foreground">
+                    Ugx {pkg.price}
+                  </span>
+                </span>
               </li>
               <li className="flex gap-2">
                 <span className="font-bold text-primary">5.</span>
-                <span>Enter Amount: <span className="font-semibold text-foreground">Ksh {pkg.price}</span></span>
+                <span>Enter PIN</span>
               </li>
               <li className="flex gap-2">
                 <span className="font-bold text-primary">6.</span>
-                <span>Enter your M-Pesa PIN</span>
-              </li>
-              <li className="flex gap-2">
-                <span className="font-bold text-primary">7.</span>
-                <span>Confirm and send payment</span>
+                <span>Confirm and Send Payment</span>
               </li>
             </ol>
           </div>
