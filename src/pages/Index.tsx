@@ -1,8 +1,7 @@
 import { motion } from "framer-motion";
 import { Wifi, Zap, Shield } from "lucide-react";
 import { useState } from "react";
-import { PaymentModal } from "@/components/PaymentModal";
-import Carousel from "@/components/Carousel"; // 👈 import carousel
+import { PaymentModal } from "@/components/PaymentModal"; // ✅ Still needed
 
 const Index = () => {
   const [selectedPackage, setSelectedPackage] = useState<{
@@ -90,10 +89,7 @@ const Index = () => {
         </div>
       </header>
 
-      {/* 👇 Carousel Section (reduced height) */}
-      <div className="max-w-3xl mx-auto px-4">
-        <Carousel />
-      </div>
+      {/* Removed Carousel Section */}
 
       {/* Packages Section */}
       <main className="container mx-auto px-4 py-10">
@@ -101,7 +97,7 @@ const Index = () => {
           variants={containerVariants}
           initial="hidden"
           animate="visible"
-          className="grid grid-cols-1 gap-4" // 👈 always 1 column
+          className="grid grid-cols-1 gap-4"
         >
           {packages.map((pkg, index) => (
             <motion.div
@@ -127,19 +123,13 @@ const Index = () => {
                 )}
 
                 <div>
-                  <h3 className="text-lg font-bold text-card-foreground">
-                    {pkg.duration}
-                  </h3>
+                  <h3 className="text-lg font-bold text-card-foreground">{pkg.duration}</h3>
                   <div className="flex items-baseline gap-1">
-                    <span className="text-2xl font-extrabold text-primary">
-                      {pkg.price}
-                    </span>
+                    <span className="text-2xl font-extrabold text-primary">{pkg.price}</span>
                     <span className="text-xs text-muted-foreground">Ugx</span>
                   </div>
                   <div className="mt-1 inline-block rounded-full bg-gradient-to-r from-primary/10 to-secondary/10 px-3 py-0.5">
-                    <span className="text-sm font-semibold text-foreground">
-                      {pkg.data}
-                    </span>
+                    <span className="text-sm font-semibold text-foreground">{pkg.data}</span>
                   </div>
                 </div>
 
