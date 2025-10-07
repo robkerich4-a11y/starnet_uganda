@@ -12,11 +12,11 @@ const Index = () => {
 
   // 🇺🇬 Uganda Packages
   const packages = [
-    { duration: "1 Day", data: "7GB", price: "3,000" },
-    { duration: "7 Days", data: "12GB", price: "7,000" },
-    { duration: "15 Days", data: "10GB", price: "12,000" },
-    { duration: "21 Days", data: "45GB", price: "18,000" },
-    { duration: "30 Days", data: "Unlimited", price: "30,000", featured: true },
+    { duration: "1 Day", data: "4GB", price: "6,000" },
+    { duration: "7 Days", data: "12GB", price: "12,000" },
+    { duration: "2 Weeks", data: "34GB", price: "18,000" },
+    { duration: "1 Month", data: "65GB", price: "30,000" },
+    { duration: "3 Months", data: "100GB", price: "50,000", featured: true },
   ];
 
   const features = [
