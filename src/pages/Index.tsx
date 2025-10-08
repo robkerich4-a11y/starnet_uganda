@@ -16,7 +16,7 @@ const Index = () => {
     { duration: "7 Days", data: "12GB", price: "12,000" },
     { duration: "2 Weeks", data: "34GB", price: "18,000" },
     { duration: "1 Month", data: "65GB", price: "30,000" },
-    { duration: "3 Months", data: "100GB", price: "50,000", featured: true },
+    { duration: "3 Months", data: "Unlimited", price: "50,000", featured: true },
   ];
 
   const features = [
