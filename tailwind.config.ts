@@ -19,49 +19,49 @@ export default {
     },
     extend: {
       colors: {
-        border: "#7e22ce",
-        input: "#a855f7",
-        ring: "#9333ea",
-        background: "#faf5ff",
-        foreground: "#1e1b4b",
+        border: "#15803d",
+        input: "#22c55e",
+        ring: "#16a34a",
+        background: "#f0fdf4",
+        foreground: "#052e16",
 
         primary: {
-          DEFAULT: "#7e22ce", // rich purple
-          foreground: "#faf5ff",
+          DEFAULT: "#15803d", // deep green
+          foreground: "#f0fdf4",
         },
         secondary: {
-          DEFAULT: "#a855f7", // lighter purple
-          foreground: "#f5f3ff",
+          DEFAULT: "#22c55e", // light green
+          foreground: "#ecfdf5",
         },
         destructive: {
           DEFAULT: "#ef4444",
           foreground: "#ffffff",
         },
         muted: {
-          DEFAULT: "#ede9fe",
-          foreground: "#4c1d95",
+          DEFAULT: "#dcfce7",
+          foreground: "#065f46",
         },
         accent: {
-          DEFAULT: "#c084fc",
-          foreground: "#2e1065",
+          DEFAULT: "#4ade80",
+          foreground: "#064e3b",
         },
         popover: {
-          DEFAULT: "#f3e8ff",
-          foreground: "#1e1b4b",
+          DEFAULT: "#ecfdf5",
+          foreground: "#052e16",
         },
         card: {
-          DEFAULT: "#f5f3ff",
-          foreground: "#1e1b4b",
+          DEFAULT: "#f0fdf4",
+          foreground: "#052e16",
         },
         sidebar: {
-          DEFAULT: "#3b0764",
-          foreground: "#f5f3ff",
-          primary: "#7e22ce",
-          "primary-foreground": "#faf5ff",
-          accent: "#a855f7",
+          DEFAULT: "#064e3b",
+          foreground: "#f0fdf4",
+          primary: "#15803d",
+          "primary-foreground": "#f0fdf4",
+          accent: "#22c55e",
           "accent-foreground": "#ffffff",
-          border: "#6d28d9",
-          ring: "#9333ea",
+          border: "#0d9488",
+          ring: "#16a34a",
         },
       },
       borderRadius: {

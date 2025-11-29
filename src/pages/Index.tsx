@@ -157,8 +157,10 @@ const Index = () => {
           <p className="text-xs text-muted-foreground">
             © 2025 Starnet Uganda. All rights reserved.
           </p>
+
+          {/* UPDATED EMAIL HERE */}
           <a
-            href="mailto:starnetuganda@gmail.com?subject=Internet%20Package%20Inquiry&body=Hi%20Starnet%20Uganda%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20packages."
+            href="mailto:starnetuganda1@gmail.com?subject=Internet%20Package%20Inquiry&body=Hi%20Starnet%20Uganda%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20packages."
             className="inline-block bg-primary text-primary-foreground px-3 py-1.5 rounded-md shadow hover:bg-primary/90 transition text-[11px] font-medium"
           >
             Contact Us
