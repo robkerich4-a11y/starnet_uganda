@@ -158,12 +158,13 @@ const Index = () => {
             © 2025 Starnet Uganda. All rights reserved.
           </p>
 
-          {/* UPDATED EMAIL HERE */}
+          {/* UPDATED WHATSAPP BUTTON */}
           <a
-            href="mailto:starnetuganda1@gmail.com?subject=Internet%20Package%20Inquiry&body=Hi%20Starnet%20Uganda%2C%0AI%20would%20like%20to%20know%20more%20about%20your%20packages."
+            href="https://wa.me/256774095423?text=Hello%20Starnet%20Uganda%2C%20I%20need%20more%20information%20about%20your%20internet%20packages."
+            target="_blank"
             className="inline-block bg-primary text-primary-foreground px-3 py-1.5 rounded-md shadow hover:bg-primary/90 transition text-[11px] font-medium"
           >
-            Contact Us
+            Contact Us on WhatsApp
           </a>
         </div>
       </footer>
