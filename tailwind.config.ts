@@ -19,49 +19,49 @@ export default {
     },
     extend: {
       colors: {
-        border: "#15803d",
-        input: "#22c55e",
-        ring: "#16a34a",
-        background: "#f0fdf4",
-        foreground: "#052e16",
+        border: "#6b21a8",
+        input: "#9333ea",
+        ring: "#7e22ce",
+        background: "#faf5ff",
+        foreground: "#3b0764",
 
         primary: {
-          DEFAULT: "#15803d", // deep green
-          foreground: "#f0fdf4",
+          DEFAULT: "#6b21a8", // deep purple
+          foreground: "#faf5ff",
         },
         secondary: {
-          DEFAULT: "#22c55e", // light green
-          foreground: "#ecfdf5",
+          DEFAULT: "#9333ea", // medium purple
+          foreground: "#f5f3ff",
         },
         destructive: {
           DEFAULT: "#ef4444",
           foreground: "#ffffff",
         },
         muted: {
-          DEFAULT: "#dcfce7",
-          foreground: "#065f46",
+          DEFAULT: "#f3e8ff",
+          foreground: "#6b21a8",
         },
         accent: {
-          DEFAULT: "#4ade80",
-          foreground: "#064e3b",
+          DEFAULT: "#c084fc",
+          foreground: "#4c1d95",
         },
         popover: {
-          DEFAULT: "#ecfdf5",
-          foreground: "#052e16",
+          DEFAULT: "#f5f3ff",
+          foreground: "#3b0764",
         },
         card: {
-          DEFAULT: "#f0fdf4",
-          foreground: "#052e16",
+          DEFAULT: "#faf5ff",
+          foreground: "#3b0764",
         },
         sidebar: {
-          DEFAULT: "#064e3b",
-          foreground: "#f0fdf4",
-          primary: "#15803d",
-          "primary-foreground": "#f0fdf4",
-          accent: "#22c55e",
+          DEFAULT: "#4c1d95",
+          foreground: "#faf5ff",
+          primary: "#6b21a8",
+          "primary-foreground": "#faf5ff",
+          accent: "#9333ea",
           "accent-foreground": "#ffffff",
-          border: "#0d9488",
-          ring: "#16a34a",
+          border: "#7e22ce",
+          ring: "#9333ea",
         },
       },
       borderRadius: {
