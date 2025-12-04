@@ -160,7 +160,7 @@ const Index = () => {
 
           {/* UPDATED WHATSAPP BUTTON */}
           <a
-            href="https://wa.me/256774095423?text=Hello%20Starnet%20Uganda%2C%20I%20need%20more%20information%20about%20your%20internet%20packages."
+            href="https://wa.me/256792081841?text=Hello%20Starnet%20Uganda%2C%20I%20need%20more%20information%20about%20your%20internet%20packages."
             target="_blank"
             className="inline-block bg-primary text-primary-foreground px-3 py-1.5 rounded-md shadow hover:bg-primary/90 transition text-[11px] font-medium"
           >
